@@ -1,8 +1,8 @@
 var reasons = [];
 
 function init() {
-    $.get("excuses.txt", function(data) {
-      reasons = data.split(',');
+    $.get("https://torisaur.github.io/excuses.txt", function(data) {
+      reasons = data.split('\n');
     });
     console.log(reasons[1]);
 }
