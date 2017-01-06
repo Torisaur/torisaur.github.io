@@ -2,7 +2,7 @@ var reasons = [];
 
 function init() {
     $.get("excuses.txt", function(data) {
-      reasons = data.split('\n');
+      reasons = data.split(',');
     });
     console.log(reasons[1]);
 }
