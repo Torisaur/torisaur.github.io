@@ -1,0 +1,18 @@
+body {
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    background-color: #98C1D9;
+}
+
+.text {
+    color: #293241;
+}
+#saltButton {
+    background-color: #EE6C4D;
+    text-align: center;
+    height: 50px;
+    width: 70px;
+    color: #293241;
+    border: none;
+    display: inline-block;
+    border-radius: 10px;
+}

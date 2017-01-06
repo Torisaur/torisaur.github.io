@@ -1,9 +1,15 @@
 <!DOCTYPE html>
 <html>
     <head>
-
+        <title class="text">Welcome to the Dead Sea.</title>
+        <link rel="stylesheet" type="text/css" href="saltCSS.css" />
+        <script src="jquery-3.1.1.js"></script>
+        <script type="text/javascript" src="saltJS.js"></script>
     </head>
-    <body>
-        
+    <body onload="init()">
+        <p> Why are you salty today? </p>
+        <div>
+            <button id="saltButton" onclick="getReason()">Get Reason!</button>
+        </div>
     </body>
 </html>
