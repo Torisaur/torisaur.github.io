@@ -1,12 +1,10 @@
-var reasons = [];
-
-function init() {
-    $.get("https://torisaur.github.io/excuses.txt", function(data) {
-      reasons = data.split('\n');
-    });
-    console.log(reasons[1]);
-}
+var reasons = ["test"];
 
 function getReason() {
-    document.write(reasons[Math.floor((Math.random)*12)])
+    $.get("https://torisaur.github.io/excuses.txt", function(data) {
+        window.reasons = data.split('\n');
+        var randomNumber = Math.floor(Math.random() * 12);
+        console.log(window.reasons[randomNumber]);
+    });
+    
 }
