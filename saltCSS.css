@@ -1,27 +1,47 @@
 body {
-    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-    background-color: #3D5A80
+    font-family: 'Segoe UI', Helvetica Neue, Helvetica, Arial, sans-serif;
+    background-image: url(https://torisaur.github.io/polkadots.png);
 }
 
 #header{
-    background-image: url(https://i.ytimg.com/vi/hefDYC8V1F4/hqdefault.jpg?custom=true&w=168&h=94&stc=true&jpg444=true&jpgq=90&sp=68&sigh=5XNGm_x57vP-Yodst12GjrgET-M);
-    background-repeat: space;
+    background-color: #E0FBFC;
+    border-style: solid;
+    border-width: 2px;
+    border-color: dimgray;
+    border-radius: 100px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+#header h1 {
+    font-size: 60px;
 }
 
 #container {
-    background-color: #98C1D9;
-    padding: 10px
+    
+    text-align: center;
+    background-color: #E0FBFC;
+    border-radius: 25px;
+    margin: auto;
+    height: 300px; 
 }
 
 .text {
+    font-size: 20px;
     color: #293241;
 }
+
+#saltReason {
+    font-size: 24px;
+    color: #293241;
+}
+
 #saltButton {
     background-color: #EE6C4D;
     text-align: center;
     height: 50px;
     width: 70px;
-    color: #293241;
+    color: white;
     border: none;
     display: inline-block;
     border-radius: 10px;
