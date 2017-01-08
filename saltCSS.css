@@ -9,40 +9,57 @@ body {
     border-width: 2px;
     border-color: dimgray;
     border-radius: 100px;
+    margin: auto;
     text-align: center;
-    box-sizing: border-box;
+    display: block;
+    width: 80%;
+    margin: 0 auto 0 auto;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 #header h1 {
+    color: #293241;
     font-size: 60px;
 }
 
 #container {
-    
     text-align: center;
-    background-color: #E0FBFC;
-    border-radius: 25px;
     margin: auto;
-    height: 300px; 
+    background-color: #E0FBFC;
+    background: linear-gradient(to bottom, #E0FBFC, #3D5A80);
+    border-radius: 25px;
+    width: 80%;
+    height: 220px; 
+    
 }
 
 .text {
-    font-size: 20px;
-    color: #293241;
+    text-decoration: underline;
+    font-size: 25px;
+    color: #3D5A80;
 }
 
 #saltReason {
-    font-size: 24px;
+    border-style: dotted;
+    border-color: black;
+    width: 1050px;
+    text-align: center;
+    margin: auto;
+    font-size: 28px;
     color: #293241;
 }
 
 #saltButton {
+    font-size: 24px;
     background-color: #EE6C4D;
+    background: linear-gradient(to bottom right, #EE6C4D, #EE0C4D);
     text-align: center;
-    height: 50px;
-    width: 70px;
+    height: 80px;
+    width: 110px;
     color: white;
-    border: none;
+    border-color:#E0FBFC;
+    border-width: 2px;
     display: inline-block;
     border-radius: 10px;
 }
