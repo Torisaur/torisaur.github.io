@@ -1,6 +1,6 @@
 body {
     font-family: 'Segoe UI', Helvetica Neue, Helvetica, Arial, sans-serif;
-    background-image: url(https://torisaur.github.io/polkadots.png);
+    background-image: url(https://torisaur.github.io/images/polkadots.png);
 }
 
 #header{
@@ -30,7 +30,7 @@ body {
     background: linear-gradient(to bottom, #E0FBFC, #3D5A80);
     border-radius: 25px;
     width: 80%;
-    height: 220px; 
+    height: 300px; 
     
 }
 
@@ -41,11 +41,9 @@ body {
 }
 
 #saltReason {
-    border-style: dotted;
-    border-color: black;
-    width: 1050px;
+    width: 500px;
     text-align: center;
-    margin: auto;
+    margin: 0 auto 0 auto;
     font-size: 28px;
     color: #293241;
 }
