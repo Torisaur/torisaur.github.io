@@ -1,4 +1,5 @@
 body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     background-color: mediumpurple;
 }
 
@@ -12,6 +13,7 @@ body {
 }
 
 .section {
+    color: white;
     border-color: white;
     border-style: dotted;
     margin-bottom: 10px;
@@ -23,20 +25,38 @@ body {
     background-color: lightgray;
     border-radius: 10px;
 }
+.brand{
+    height: 30px;
+}
+.main {
+    height:30px;
+    width: 30px;
+}
+.brandText{
+    display: inline-block;
+    min-width: 100px;
+}
 
 #randomizers {
     width: 510px;
-    margin-left: auto;
+    margin-left: 40px;
     margin-right: auto;
-justify-content: center; 
-    float: left;
 }
 
 #options {
     width: 200px;
     height: 480px;
-    margin-left: 10px;
+    margin-left: 40px;
+    margin-right: auto;
     float: left;
+}
+
+#menu{
+    width: 190px;
+    height: 470px;
+    border-color: snow;
+    border-style: inset;
+    border-radius: 10px;
 }
 
 #headgearBox {

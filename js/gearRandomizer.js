@@ -12,7 +12,13 @@ var sMain = [];
 var left = false;
 var i = 0;
 function init() {
-  $(document).ready(function(){  
+    $("#hBrandPic").hide();
+    $("#hMainPic").hide();
+    $("#cBrandPic").hide();
+    $("#cMainPic").hide();
+    $("#sBrandPic").hide();
+    $("#sMainPic").hide();
+    $(document).ready(function(){  
       $("#randomizer").click(function() {
         changeHeadgear();
         $("#randomizer").animate({left: '20px'}); 
@@ -96,34 +102,50 @@ function init() {
 
 
 function changeHeadgear() {
+    var amiibo = true;
+    if ($("#amiiboChoice").prop("checked") == true) {
+        amiibo = false;
+    }
     headgearNumber= Math.floor(Math.random()*70);
     clothingNumber= Math.floor(Math.random()*121);
     shoeNumber= Math.floor(Math.random()*67);
+    while ([hBrand[headgearNumber]] == 0 || [cBrand[clothingNumber]] == 0 || [sBrand[shoeNumber]] == 0) {
+        alert("changed");
+        headgearNumber= Math.floor(Math.random()*70);
+        clothingNumber= Math.floor(Math.random()*121);
+        shoeNumber= Math.floor(Math.random()*67);
+    }
     $("#headgear").attr("src", "https://torisaur.github.io/images/headgear/headgear" + headgearNumber + ".png");
     $("#headgear").attr("width", "60px"); 
     $("#hBrandPic").attr("src", "https://torisaur.github.io/images/brands/brand" + hBrand[headgearNumber] + ".png"); 
     document.getElementById("hName").innerHTML = headgears[headgearNumber];
     document.getElementById("hBrand").innerHTML = brands[hBrand[headgearNumber]];
     document.getElementById("hBrandPic").src="https://torisaur.github.io/images/brands/brand" + hBrand[headgearNumber] + ".png"; 
+    $("#hBrandPic").show(1000);
     document.getElementById("hMain").innerHTML= mains[hMain[headgearNumber]];
     $("#hMainPic").attr("width", "50px"); 
-    document.getElementById("hMainPic").src="https://torisaur.github.io/images/abilities/ability" + hMain[headgearNumber] + ".png";
+    $("#hMainPic").attr("src", "https://torisaur.github.io/images/abilities/ability" + hMain[headgearNumber] + ".png");
+    $("#hMainPic").show(1000);
 
     $("#clothing").attr("src", "https://torisaur.github.io/images/clothing/clothing" + clothingNumber + ".png");
     $("#clothing").attr("width", "60px"); 
     document.getElementById("cName").innerHTML = clothing[clothingNumber];
     document.getElementById("cBrand").innerHTML = brands[cBrand[clothingNumber]];
     document.getElementById("cBrandPic").src="https://torisaur.github.io/images/brands/brand" + cBrand[clothingNumber] + ".png"; 
+    $("#cBrandPic").show(1000);
     document.getElementById("cMain").innerHTML= mains[cMain[clothingNumber]];
     $("#cMainPic").attr("width", "50px"); 
-    document.getElementById("cMainPic").src="https://torisaur.github.io/images/abilities/ability" + cMain[clothingNumber] + ".png";
+    $("#cMainPic").attr("src", "https://torisaur.github.io/images/abilities/ability" + cMain[clothingNumber] + ".png")
+    $("#cMainPic").show(1000);
 
     $("#shoe").attr("src", "https://torisaur.github.io/images/shoes/shoe" + shoeNumber + ".png");
     $("#shoe").attr("width", "60px"); 
     document.getElementById("sName").innerHTML = shoes[shoeNumber];
     document.getElementById("sBrand").innerHTML = brands[sBrand[shoeNumber]];
     document.getElementById("sBrandPic").src="https://torisaur.github.io/images/brands/brand" + sBrand[shoeNumber] + ".png"; 
+    $("#sBrandPic").show(1000);
     document.getElementById("sMain").innerHTML= mains[sMain[shoeNumber]];
     $("#sMainPic").attr("width", "50px"); 
     document.getElementById("sMainPic").src="https://torisaur.github.io/images/abilities/ability" + sMain[shoeNumber] + ".png";
+    $("#sMainPic").show(1000);
 }

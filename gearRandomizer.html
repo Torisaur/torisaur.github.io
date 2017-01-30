@@ -9,14 +9,18 @@
     <body onload="init()">
         <div id="titleText">Splatoon Gear Randomizer!</div>
             <div id = "randomizers" class="section">
-                <div id= "headgearBox">Headgear <p id="hName">None selected.</p>
-                    <img src="" id="headgear" class="gear"></img> <img src="" id="hBrandPic" class="brand"></img><span id="hBrand"></span> <img src="" id="hMainPic" class="main"></img><span id="hMain"></span></div>
-                <div id = "clothingBox">Clothing<p id="cName">None selected.</p>
-                    <img src="" id="clothing" class="gear"></img> <img src="" id="cBrandPic" class="brand"></img><span id="cBrand"></span> <img src="" id="cMainPic" class="main"></img><span id="cMain"></span></div>
-                <div id = "shoeBox">Shoe<p id="sName">None selected.</p>
-                    <img src="" id="shoe" class="gear"></img> <img src="" id="sBrandPic" class="brand"></img><span id="sBrand"></span> <img src="" id="sMainPic" class="main"></img><span id="sMain"></span></div>
+                <div id= "headgearBox"><span style="text-decoration: underline">Headgear</span> <p id="hName">None selected.</p>
+                    <img src="" id="headgear" class="gear"></img> <img src="" id="hBrandPic" class="brand"></img><div id="hBrand" class="brandText"></div> <img src="" id="hMainPic" class="main"></img><span id="hMain"></span></div>
+                <div id = "clothingBox"><span style="text-decoration: underline">Clothing</span><p id="cName">None selected.</p>
+                    <img src="" id="clothing" class="gear"></img> <img src="" id="cBrandPic" class="brand"></img><div id="cBrand" class="brandText"></div> <img src="" id="cMainPic" class="main"></img><span id="cMain"></span></div>
+                <div id = "shoeBox"><span style="text-decoration: underline">Shoe</span><p id="sName">None selected.</p>
+                    <img src="" id="shoe" class="gear"></img> <img src="" id="sBrandPic" class="brand"></img><div id="sBrand" class="brandText"></div> <img src="" id="sMainPic" class="main"></img><span id="sMain"></span></div>
             </div>
-        <div id= "options" class="section">Menus?</div>
+        <div id= "options" class="section">
+            <div style="background-color:rebeccapurple" id="menu">Options</br>
+            <input type="checkbox" id="amiiboChoice">No Amiibo Clothing</input>
+            </div>
+        </div>
         <p id="buttonHolder">
             <button id = "randomizer">Click me!</button>
         </p>
