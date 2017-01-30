@@ -63,7 +63,7 @@ function init() {
     "Red Slip-Ons", "Red Work Boots", "Roasted Brogues", "Samurai Shoes", "School Shoes", "Shark Moccasins", "Snowy Down Boots", "Soccer Cleats", "SQUID GIRL Shoes", "Squid-Stitch Slip-Ons",
     "Squink Wingtips", "Strapping Reds", "Strapping Whites", "Tan Work Boots", "Traditional Sandals", "Trail Boots", "Turquoise Kicks", "White Arrows", "White Kicks", "White Seahorses",
     "Yellow Seahorses", "Zombie Hi-Horses"];
-    window.brands = ["amiibo", "Cuttlgear", "Famitsu", "Firefin", "Forge", 
+    window.brands = ["amiibo", "Cuttlegear", "Famitsu", "Firefin", "Forge", 
       "Inkline", "KOG", "Krak-on", "Rockenberg", "Skalop", "Splash Mob",
       "SquidForce", "Takoroka", "Tentatek", "The SQUID GIRL", "Zekko", "Zink"];
     window.mains = ["Bomb Range Up", "Bomb Sniffer", "Cold Blooded", "Comeback",
@@ -86,8 +86,12 @@ function init() {
     window.hMain = [11,23,13,14,9,7,23,7,15,22,19,19,4,5,0,10,18,18,3,15,23,17,17,20,10,
     9,4,22,14,11,0,3,10,0,5,14,11,4,9,20,20,23,4,13,5,23,4,16,3,22,13,18,22,15,10,13,
     9,0,5,3,17,11,3,7,20,0,11,19,7,15];
-    window.cMain = [];
-    window.sMain = [];
+    window.cMain = [7,2,18,10,20,5,18,14,19,5,16,22,0,9,15,20,16,17,19,10,0,18,14,5,10,2,5,2,
+    2,4,0,7,17,6,22,7,22,15,15,16,12,20,19,0,12,22,6,17,17,20,0,7,9,5,22,4,4,6,10,16,18,4,10,19,
+    14,0,9,9,9,19,20,14,5,4,7,15,10,2,17,18,12,7,20,12,2,5,4,14,19,22,6,0,2,15,17,15,18,14,14,17,16,4,
+    6,16,12,15,19,20,22,7,9,7,14,10,15,6,18,5,12,4,19];
+    window.sMain = [17,9,1,22,14,5,8,18,0,10,4,21,14,18,21,20,21,19,4,17,21,15,7,21,10,8,7,14,8,20,9,22,17,0,4,9,1,1,
+    18,20,19,17,9,8,20,15,15,5,19,10,0,15,1,22,5,14,8,10,0,17,7,18,19,22,7,1,18];
 }
 
 

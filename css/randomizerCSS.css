@@ -11,10 +11,6 @@ body {
     width: 400px;
 }
 
-#test {
-    border-style: dashed;
-    border-color: black;
-}
 .section {
     border-color: white;
     border-style: dotted;
@@ -85,7 +81,7 @@ justify-content: center;
     border-style: solid;
     border-color: black;
     height: 30px;
-    width: 90px;
+    width: 120px;
     text-align: center;
     font-size: 15px;
     position: relative;
