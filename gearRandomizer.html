@@ -1,10 +1,24 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>#Just Little Splatoon Things: JLST</title>
-        <link rel="stylesheet" type="text/css" href="css\indexCSS.css"/>
+        <title> Splatoon Gear Randomizer </title>
+        <script src="js\gearRandomizer.js"></script>
+        <link rel="stylesheet" type="text/css" href="css\randomizerCSS.css" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     </head>
-    <body>
-            <p>sometime there'll be a cool kid's randomizer here</p>
-   </body>
+    <body onload="init()">
+        <div id="titleText">Splatoon Gear Randomizer!</div>
+            <div id = "randomizers" class="section">
+                <div id= "headgearBox">Headgear <p id="hName">None selected.</p>
+                    <img src="" id="headgear" class="gear"></img> <img src="" id="hBrandPic" class="brand"></img><span id="hBrand"></span> <img src="" id="hMainPic" class="main"></img><span id="hMain"></span></div>
+                <div id = "clothingBox">Clothing<p id="cName">None selected.</p>
+                    <img src="" id="clothing" class="gear"></img> <img src="" id="cBrandPic" class="brand"></img><span id="cBrand"></span> <img src="" id="cMainPic" class="main"></img><span id="cMain"></span></div>
+                <div id = "shoeBox">Shoe<p id="sName">None selected.</p>
+                    <img src="" id="shoe" class="gear"></img> <img src="" id="sBrandPic" class="brand"></img><span id="sBrand"></span> <img src="" id="sMainPic" class="main"></img><span id="sMain"></span></div>
+            </div>
+        <div id= "options" class="section">Menus?</div>
+        <p id="buttonHolder">
+            <button id = "randomizer">Click me!</button>
+        </p>
+    </body>
 </html>
