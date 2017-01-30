@@ -110,7 +110,6 @@ function changeHeadgear() {
     clothingNumber= Math.floor(Math.random()*121);
     shoeNumber= Math.floor(Math.random()*67);
     while ([hBrand[headgearNumber]] == 0 || [cBrand[clothingNumber]] == 0 || [sBrand[shoeNumber]] == 0) {
-        alert("changed");
         headgearNumber= Math.floor(Math.random()*70);
         clothingNumber= Math.floor(Math.random()*121);
         shoeNumber= Math.floor(Math.random()*67);
