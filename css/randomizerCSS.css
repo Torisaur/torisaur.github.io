@@ -1,5 +1,10 @@
+@font-face {
+    font-family: Paintball;
+    src: url('../resources/Paintball_Beta_3.otf');
+}
+
 body {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Paintball, Verdana, Geneva, Tahoma, sans-serif;
     background-color: mediumpurple;
 }
 
@@ -34,7 +39,7 @@ body {
 }
 .brandText{
     display: inline-block;
-    min-width: 100px;
+    min-width: 120px;
 }
 
 #randomizers {
@@ -52,6 +57,7 @@ body {
 }
 
 #menu{
+    font-size: 16px;
     width: 190px;
     height: 470px;
     border-color: snow;
@@ -60,6 +66,7 @@ body {
 }
 
 #headgearBox {
+    font-size: 18px;
     color: white;
     background-color:rebeccapurple;
     margin-bottom: 5px;
@@ -70,6 +77,7 @@ body {
     border-radius: 10px;
 }
 #clothingBox {
+    font-size: 18px;
     color: white;
     background-color: rebeccapurple;
     margin-bottom: 5px;
@@ -80,6 +88,7 @@ body {
     border-radius: 10px;
 }
 #shoeBox {
+    font-size: 18px;
     color: white;
     background-color: rebeccapurple;
     margin-bottom: 5px;
@@ -103,6 +112,6 @@ body {
     height: 30px;
     width: 120px;
     text-align: center;
-    font-size: 15px;
+    font-size: 18px;
     position: relative;
 }

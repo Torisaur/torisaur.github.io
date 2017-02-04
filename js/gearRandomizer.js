@@ -12,6 +12,7 @@ var sMain = [];
 var left = false;
 var i = 0;
 function init() {
+    
     $("#hBrandPic").hide();
     $("#hMainPic").hide();
     $("#cBrandPic").hide();
